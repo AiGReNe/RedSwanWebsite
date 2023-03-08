@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classified Ads</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../signInPageStyle.css">
+  
+</head>
+<body>
+  
+  <!-- The top section of the page with team name, search bar, and menu bar -->
+  <section class="topNav">
+    <div class="logo">
+      <h1>Red Swan</h1>
+    </div>
+
+    <div>
+      <img class="logoImage" src="../images/redSwanLogo.jpg" alt="websiteLogo">
+    </div>
+
+    <div class="searchContainer">
+      <form>
+          <input type="search" id="searchBar" placeholder="Search...">
+        
+        
+        
+        <div class="searchContainer">
+          <button type="submit" ><span>Search</span><i class="search"></i></button>
+        </div>
+       
+      </form>
+    </div>
+
+    <input id="menuToggle" type="checkbox" />
+    <label class='menuButtonContainer' for="menuToggle">
+      <div class='menuButton'></div>
+    </label>
+    <ul class="menu">
+      
+      <li><a href="gamePage.html">Our Games</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="currencyFlip.html">Currency Flip</a></li>
+      <li><button onclick="document.getElementById('signIn').style.display='block'" style="width:auto;">Sign In</button></li>
+    </ul>
+  
+  </section>
+
+
+  <!-- Our signIn popUP -->
+  <div id="signIn" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('signIn').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('SignIn').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+
+  <main>
+    <section class="listings">
+      <div class="container">
+      <h2>OUR HOMEPAGE</h2>
+      <div class="row">
+        <ul id="pageListing"></ul>
+      </div>
+    </div>
+    </section>
+  </main>
+   
+  
+
+
+<!-- Our script for signIn popUP -->
+  <script>
+    var modal = document.getElementById('signIn');
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+  </script>
+
+</body>

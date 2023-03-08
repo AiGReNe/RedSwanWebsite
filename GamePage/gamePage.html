@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedSwan Games</title>
+
+   
+    <link rel="stylesheet" href="gameListingStyle.css">
+    <link rel="stylesheet" href="gamePageStyle.css">
+    <link rel="stylesheet" href="gamePageSearchbar.css">
+    
+</head>
+<body>
+
+    <section class="topNav">
+        <div class="logo">
+          <h1>Red Swan</h1>
+        </div>
+    
+        <div >
+          <img class="logoImage"   src="../images/redSwanLogo.jpg" alt="websiteLogo">
+        </div>
+    
+        <div class="searchContainer">
+          <form>
+              <input type="search" id="search-bar" placeholder="Search...">
+            
+            
+            <div class="searchContainer">
+              <button type="submit" ><span>Search</span><i class="search"></i></button>
+            </div>
+           
+          </form>
+        </div>
+    
+        <input id="menuToggle" type="checkbox" />
+        <label class='menuButtonContainer' for="menuToggle">
+          <div class='menuButton'></div>
+        </label>
+        <ul class="menu">
+          <li><a href="../HomePage/index.html">Home</a></li>
+          <li><a href="../ServicePage/Services.html">Services</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+      </section>
+
+      <h2>OUR GAMES</h2>
+
+      
+      
+
+                     
+        <div id="pageListing" class="row">
+        </div>
+
+      <script src="../ourGames.js"></script>
+    
+</body>
+</html>

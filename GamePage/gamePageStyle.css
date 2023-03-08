@@ -1,0 +1,49 @@
+/* Global styles */
+* {
+    font-family: "Raleway";
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #005ea5;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+ 
+    
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  #serviceBox{
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #222;
+    width: 500px;
+    height: 600px;
+  }
+  
