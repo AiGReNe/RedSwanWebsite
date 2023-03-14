@@ -35,7 +35,7 @@ const items = [
             <h3>${item.name}</h3>
             <p>Players: ${item.players}</p>
             <p>Description: ${item.description}</p>
-            <a href="#">Play</a>
+            <a href="https://www.google.com/">Play</a>
             </div>
           </div>
         </div>
@@ -48,49 +48,4 @@ const items = [
     displayItems();
   });
 
-
-  // function displayItems() {
-  //   const ul = document.getElementById("pageListing");
-  //   ul.innerHTML = "";
-  //   items.forEach((item) => {
-  //     const li = document.createElement("li");
-  //     li.innerHTML = `
-  //       <div class="listing">
-  //       <div class="listing-img">
-  //         <img src="${item.imageUrl}" alt="Item for Sale">
-  //         <div class="listing-details">
-  //           <h3>${item.name}</h3>
-  //           <p>Price: $${item.price}</p>
-  //           <p>Description: ${item.description}</p>
-  //           <a href="#">Play</a>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     `;
-  //     ul.appendChild(li);
-  //   });
-  // }
-
-
-
-
-  // function displayItems() {
-  //   const ul = document.getElementById("pageListing");
-  //   ul.innerHTML = "";
-  //   items.forEach((item) => {
-  //     const li = document.createElement("li");
-  //     li.innerHTML = `
-  //       <div class="listing">
-  //         <img src="${item.imageUrl}" alt="Item for Sale">
-  //         <div class="listing-details">
-  //           <h3>${item.name}</h3>
-  //           <p>Price: $${item.price}</p>
-  //           <p>Description: ${item.description}</p>
-  //           <a href="#">Learn More</a>
-  //         </div>
-  //       </div>
-  //     `;
-  //     ul.appendChild(li);
-  //   });
-  // }
   

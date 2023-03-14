@@ -1,0 +1,155 @@
+
+/* ShoutOUt to icons8 for all of there icons */
+/* https://icons8.com/icons/set/login */
+
+/* Global styles */
+
+* {
+    font-family: "Raleway";
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(179, 245, 255);
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #005ea5;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logoImage {
+    width: 25px;
+  }
+  
+  
+  .logo {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  
+  .backgrnd {
+    /* background: linear-gradient(to left, #f46b45, #eea849); */
+    background-image: url('../photos/solutions.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 298px;
+    width: 60%;
+    margin-left: 380px;
+    /* margin-top: 10px; */
+    height: 300px;
+  }
+ 
+ 
+  .serviceBox{
+    /* transform: rotate(-405deg); */
+    margin: auto;
+   box-sizing: border-box;
+    padding: 10;
+    display: flex;
+     /* justify-content: space-evenly; */
+     flex-wrap: wrap;
+     align-content: flex-start;
+     gap: 1em;
+    /* border: 2px solid white; */
+    width: 50%;
+    height: 600px;
+    /* background-color: #00BAF0; */
+    border-radius: 10px;
+  }
+
+  .serviceBox div{
+    /* transform: rotate(-405deg); */
+    border: 1px solid #00BAF0;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    align-content: center;
+  }
+
+ 
+
+  .serviceBox div div{
+    border: none;
+    height: 80px;
+    width: 60%;
+    left: 40px;
+    position: relative;
+    
+    
+  }
+
+  .serviceBox div div img{
+    height: 60px;
+    width: 60px;
+    /* margin-top: 10px; */
+    position: relative;
+    left: 10px;
+  }
+
+  .animation img {
+    margin-top: 30px;
+  }
+
+  .Gde img{
+    margin-top:30px;
+  }
+
+  .mobile img {
+    margin-top: 15px;
+  }
+
+  .architect img {
+    margin-top: 15px;
+  }
+ 
+  .security img {
+    margin-top: 25px;
+    margin-left: 8px;
+  }
+
+  .software img {
+    margin-top: 20px;
+  }
+
+  .UX img {
+    margin-top: 20px;
+  }
+
+  .web img{
+    margin-left: 20px ;
+    margin-top: 20px;
+  }
+
+  .serviceBox div a{
+    color: rgb(52, 52, 52);
+  }
+
+  .btmContainer{
+    background:#00BAF0 ;
+    height: 40px;
+    width: 100%;
+  }
+
+  /* Would like to align everything in each role div. Need to change the letter coloring for link 
+  when pointer is hovering over and after clicked. */
+
+  /* Adjust the background image across the screen without looking so stretched. Let the our clients or users know about our 
+  services and how our goals are being reached by fulfilling customer satisfaction.  */
+
+
+  
+  

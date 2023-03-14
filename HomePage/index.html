@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Red Swan Homepage</title>
-  <link rel="stylesheet" href="../Main Style/style.css">
+  <link rel="stylesheet" href="homePageStyle.css">
   <link rel="stylesheet" href="../Main Style/signInPageStyle.css">
+  <link rel="stylesheet" href="homePageTopSection.css">
+  <link rel="stylesheet" href="photoscroll.css">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="">
+  <!-- <a target="_blank" href="https://icons8.com/icon/62856/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
 
   <style>
     
@@ -16,39 +21,18 @@
   
   <!-- The top section of the page with team name, search bar, and menu bar -->
   <section class="topNav">
+
+
     <div class="logo">
-      <h1>Red Swan</h1>
+      <h1>_RedSwan</h1>
     </div>
 
-    <div>
-      <img class="logoImage" src="../images/redSwanLogo.jpg" alt="websiteLogo">
-    </div>
+   
+      <div class="gitIcon"><a href=""><img src="../photos/gitIconWhite.png" alt=""></a></div>
 
-    <div class="searchContainer">
-      <form>
-          <input type="search" id="searchBar" placeholder="Search...">
-        
-        
-        
-        <div class="searchContainer">
-          <button type="submit" ><span>Search</span><i class="search"></i></button>
-        </div>
-       
-      </form>
-    </div>
-
-    <input id="menuToggle" type="checkbox" />
-    <label class='menuButtonContainer' for="menuToggle">
-      <div class='menuButton'></div>
-    </label>
-
-    <ul class="menu">
-      <li><a href="../GamePage/gamePage.html">Our Games</a></li>
-      <li><a href="../ServicePage/Services.html">Services</a></li>
-      <li><a href="../CurrencyPage/currencyFlip.html">Currency Flip</a></li>
-      <li><button onclick="document.getElementById('signIn').style.display='block'" style="width:auto;">Sign In</button></li>
-    </ul>
-  
+    <div class="signIn"><button onclick="document.getElementById('signIn').style.display='block'" style="width:auto;">
+      <span><img class="signInIcon" src="../photos/signInIcon.png" alt=""></span>
+      <span>Sign In</span></button></div>
   </section>
 
 
@@ -84,14 +68,66 @@
 
 
   <main>
-    <section class="listings">
-      <div class="container">
-      <h2>OUR HOMEPAGE</h2>
-      <div class="row">
-        <ul id="pageListing"></ul>
-      </div>
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="menuSection"> 
+      <div ><a href="../GamePage/gamePage.html">Games</a></div>
+      
+      <div><a href="../ServicePage/Services.html">Services</a></div>
+      
+      <div><a href="../CurrencyPage/currencyFlip.html">Currency Flip</a></div>
+
+      <hr>
+
+      <div><a href="">Contact us</a></div>
+
+      <div><a href=""> Join Our Team</a></div>
+    
     </div>
-    </section>
+     
+     
+  <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <!-- <div class="swiper-slide"><img src="../images/farkle.jpg" alt=""></div> -->
+        <div class="swiper-slide"><img src="../photos/one.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../photos/two.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../photos/three.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../photos/four.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../photos/five.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../photos/six.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../photos/seven.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../photos/eight.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../photos/nine.jpg" alt=""></div>
+       
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+     
+    </div>
+
+    
+  </div>
+
+  <div class="aboutSection">
+    <H2>About Us</H2>
+    <hr>
+    <p>Hello, My name is anthony. This semester, we are enrolled in an Xi/Ui course. At the end of the course we will need to demonstrate 
+      how to give people the best experience from customer satisfaction to the solutions
+      that we offer. Thus this website. 
+    </p>
+  </div>
+
+    <div class="btmSection">
+      
+    </div>
   </main>
    
   
@@ -107,5 +143,31 @@
         }
     }
   </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+    
+</script>
 
 </body>

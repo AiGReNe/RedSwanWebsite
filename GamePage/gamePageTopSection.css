@@ -1,4 +1,38 @@
+.paradigm{
+  
+  border: 2px solid black;
+  position: relative;
+  left: -450px;
+}
+
+
+.three{
+  border: 1px solid white;
+  height: 30px;
+  width: 20px;
+}
+.two{
+transform: rotate(15deg);
+border: 1px solid white;
+height: 30px;
+width: 20px;
+}
+
+.one{
+  transform: rotate(20deg);
+  border: 1px solid white;
+  height: 30px;
+  width: 20px;
+}
+
+
+
+
+
+
 .searchContainer {
+  right: 300px;
+  position: relative;
     display: flex;
     align-items: center;
     }
@@ -18,16 +52,7 @@
     border-radius: 4px;
     }
     
-    .clear{
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border-radius: 4px;
-    cursor: pointer;
-    }
-    
+ 
     .searchContainer button[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -63,26 +88,24 @@
     background-color: #45a049;
     }
 
-
-
-.logoImage {
-    width: 25px;
-    position: relative;
-    left: -150px;
-   
-  }
   
   
   .logo {
     display: inline-block;
     margin: 10px;
     
+    
   }
   
   .logo h1 {
+    
     font-size: 28px;
     margin: 0;
   } 
+
+
+
+  
 
       /* Resources: alvarotrigo.com
     The code for the hamburger button was from the website above. 
@@ -107,7 +130,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #00BAF0;
+  
   background: #333;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
